@@ -164,6 +164,8 @@ class FirefoxHandler:
 		try:
 			self.Firefox.switch_to_window(self._get_window_handler(x,y))
 			self.Firefox.navigate(url)
+			if self._debug:
+				print("  done")
 		except:
 			pass
 
